@@ -92,6 +92,7 @@ const onUploadComplete = async ({
     });
 
     await PineconeStore.fromDocuments(pageLevelDocs, embeddings, {
+      //@ts-ignore
       pineconeIndex,
       namespace: createdFile.id,
     });
